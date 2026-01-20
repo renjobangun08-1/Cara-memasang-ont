@@ -1,0 +1,78 @@
+Berikut tutorial lengkap cara memasang ONT (Optical Network Terminal) untuk internet fiber optik (FTTH). Saya buat step-by-step, cocok untuk pemula maupun teknisi lapangan.
+🧰 Alat & Perlengkapan
+ONT (ZTE / Huawei / FiberHome / Nokia, dll)
+Adaptor power ONT
+Kabel fiber optik (patch cord SC/APC – biasanya hijau)
+Roset FO / OTB (jika ada)
+Router tambahan (opsional)
+Laptop / HP untuk konfigurasi
+Tisu kering & alkohol (opsional, untuk bersihkan konektor)
+⚠️ Persiapan Awal
+Pastikan kabel FO dari ODP sudah terpasang ke rumah
+Pastikan konektor SC/APC bersih (jangan dipegang ujungnya)
+Pastikan listrik stabil
+Jangan melihat langsung ke ujung fiber 🚫
+🔧 Langkah-Langkah Pemasangan ONT
+1️⃣ Pasang Roset FO (Jika Belum Ada)
+Pasang roset di dinding dekat stop kontak
+Masukkan kabel drop FO
+Rapikan sisa kabel (loop minimal 10 cm)
+2️⃣ Sambungkan Fiber ke ONT
+Masukkan patch cord SC/APC (hijau) ke:
+Roset FO ➝ Port PON ONT
+Dorong perlahan sampai klik
+Jangan dipaksa dan jangan ditekuk tajam
+3️⃣ Sambungkan Kabel LAN
+Gunakan kabel LAN (UTP)
+Sambungkan:
+Port LAN ONT ➝ Laptop / Router
+Jika ONT WiFi, LAN bisa langsung ke PC
+4️⃣ Sambungkan Power
+Colok adaptor ONT ke listrik
+Tekan tombol Power (jika ada)
+Tunggu ±2–3 menit sampai booting selesai
+💡 Indikator Lampu ONT (Umum)
+Lampu
+Kondisi Normal
+Power
+Menyala hijau
+PON
+Hijau stabil
+LOS
+Mati
+LAN
+Berkedip
+WLAN
+Menyala
+🚨 LOS merah menyala / berkedip = sinyal fiber bermasalah
+⚙️ Konfigurasi ONT (Jika Diperlukan)
+Akses Web ONT
+Sambungkan HP/Laptop ke ONT
+Buka browser
+Masukkan IP (umumnya):
+192.168.1.1 atau 192.168.100.1
+Login:
+Username: admin
+Password: admin / sesuai ISP
+Setting WiFi (Jika ONT WiFi)
+Masuk menu WLAN / WiFi
+Ubah:
+SSID (nama WiFi)
+Password WiFi
+Simpan & restart
+📡 Jika ONT Tidak Bisa Internet
+Pastikan SN/LOID ONT sudah terdaftar di OLT
+Pastikan PON hijau stabil
+Cek redaman (jika ada alat)
+Hubungi NOC / ISP jika ONT belum provision
+✅ Tips Penting Teknisi
+✔ Jangan tekuk kabel FO < 3 cm
+✔ Jangan sering cabut-pasang patch cord
+✔ Pasang ONT di tempat sejuk
+✔ Gunakan stop kontak khusus ONT
+Kalau kamu mau:
+🧑‍🔧 Cara registrasi ONT ke OLT
+📶 Setting ONT ke mode bridge
+🖼️ Panduan bergambar
+🔧 Troubleshooting LOS merah
+
